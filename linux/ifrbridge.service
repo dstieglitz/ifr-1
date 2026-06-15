@@ -1,0 +1,19 @@
+[Unit]
+Description=Octavi IFR-1 <-> X-Plane bridge (ifrbridge)
+# Start once the graphical session is up (X-Plane needs the GUI anyway).
+After=graphical-session.target
+# Never stop retrying — it restarts until the panel + X-Plane are present.
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+WorkingDirectory=@PROJECT_DIR@
+# Default X-Plane host; override in ~/.config/ifrbridge.env (IFRBRIDGE_HOST=...)
+Environment=IFRBRIDGE_HOST=127.0.0.1
+EnvironmentFile=-%h/.config/ifrbridge.env
+ExecStart=@PROJECT_DIR@/.venv/bin/python -m ifrbridge run --host ${IFRBRIDGE_HOST}
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

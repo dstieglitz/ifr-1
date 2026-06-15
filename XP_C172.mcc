@@ -1,0 +1,1205 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="030fee22-18a4-413b-b626-20e14115e76f">
+      <active>true</active>
+      <description>AP Master</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/autopilot_on" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" trigger="normal" pin="AP Master" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="96a69ca3-9e34-49ca-af13-13c77bf42768">
+      <active>true</active>
+      <description>AP HDG</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/heading_status" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" trigger="normal" pin="AP HDG" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c6bd9989-5523-46c2-a241-4dd8b5885f1d">
+      <active>true</active>
+      <description>AP NAV</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/nav_status" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$&amp;524288" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" trigger="normal" pin="AP NAV" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="68173f0a-5a08-46ab-b592-c6af16f3d668">
+      <active>true</active>
+      <description>AP APR</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/approach_status" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" trigger="normal" pin="AP APR" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bf0b7727-58ea-44fa-b9e5-b4d43d0314d6">
+      <active>true</active>
+      <description>AP ALT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/altitude_hold_status" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" trigger="normal" pin="AP ALT" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9871d032-142b-4955-bc6f-bcc87ba8cb38">
+      <active>true</active>
+      <description>AP VS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/autopilot/autopilot_state" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="$&amp;16" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" trigger="normal" pin="AP VS" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="d081a4e8-fe04-41d5-938c-a18884be10bc">
+      <active>true</active>
+      <description>COM1 Freq Coarse +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM1_OI" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_coarse_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a6eca923-7636-4551-9b97-2ee423457bd4">
+      <active>true</active>
+      <description>COM1 Freq Coarse -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM1_OD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_coarse_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2a02fc43-d3aa-43de-8d41-3e3f5f740bdb">
+      <active>true</active>
+      <description>COM1 Freq Fine +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM1_II" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_fine_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b6e61aeb-00d8-41ea-aad4-d1244471fc56">
+      <active>true</active>
+      <description>COM1 Freq Fine -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM1_ID" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_fine_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4b7ca0e5-7c16-47cc-b2e0-43ee6be009b2">
+      <active>true</active>
+      <description>COM1 Freq Toggle</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM1_TOG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/com1_standy_flip" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="54d6285d-67cc-4c4d-a1d0-2c047b5f154a">
+      <active>true</active>
+      <description>COM2 Freq Coarse +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM2_OI" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_coarse_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="104d9bbe-5f28-47b0-bfeb-322fe2ffe5fd">
+      <active>true</active>
+      <description>COM2 Freq Coarse -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM2_OD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_coarse_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f58324fc-f5ca-4607-8b88-67ed2d6f26b0">
+      <active>true</active>
+      <description>COM2 Freq Fine +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM2_II" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_fine_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f80eb039-b758-4daa-8136-28fe2c6e7160">
+      <active>true</active>
+      <description>COM2 Freq Fine -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM2_ID" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_fine_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1233c165-a199-425d-9755-4c4bcf263702">
+      <active>true</active>
+      <description>COM2 Freq Toggle</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM2_TOG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/com2_standy_flip" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c6360c42-d274-47a6-a614-4edf196068d2">
+      <active>true</active>
+      <description>HDG Coarse +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM1^_OI" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="599143a7-fac3-49b9-aa3d-405f5349d489">
+      <active>true</active>
+      <description>HDG Coarse -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM1^_OD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a52a3a0f-ebb6-4ae5-b727-fdceb1905678">
+      <active>true</active>
+      <description>HDG Fine +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM1^_II" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ea71a6aa-eb4e-4df5-9244-71334c2abb02">
+      <active>true</active>
+      <description>HDG Fine -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM1^_ID" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f004bca0-3a92-4604-b53d-e805850103d8">
+      <active>true</active>
+      <description>HDG Sync (TOG)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM1^_TOG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_sync" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="aeb1a60b-1c29-4ffb-9e4f-51791d35c9f9">
+      <active>true</active>
+      <description>BARO Coarse +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM2^_OI" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/instruments/barometer_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2e4a6143-5028-498b-b537-073966ef3470">
+      <active>true</active>
+      <description>BARO Coarse -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM2^_OD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/instruments/barometer_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5ce9f394-5450-4ef7-85b3-b52f5d2e7098">
+      <active>true</active>
+      <description>BARO Fine +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM2^_II" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/instruments/barometer_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d006dec1-6d6b-4d3d-835a-cbeb1f492f57">
+      <active>true</active>
+      <description>BARO Fine -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM2^_ID" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/instruments/barometer_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bb7fdd3c-50a5-452b-9d66-bad3b7d2b8de">
+      <active>true</active>
+      <description>BARO Sync (TOG)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_COM2^_TOG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/instruments/barometer_2992" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="916b564c-dcae-4808-9ce1-44a680a787dc">
+      <active>true</active>
+      <description>NAV1 Freq Coarse +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV1_OI" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_coarse_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c2035767-170d-44fa-acee-a10304bf8088">
+      <active>true</active>
+      <description>NAV1 Freq Coarse -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV1_OD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_coarse_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9c86220c-8cea-47ca-992b-a92705adec1a">
+      <active>true</active>
+      <description>NAV1 Freq Fine +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV1_II" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_fine_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="088cb9d2-ca33-4a5a-9763-52a70b912f6b">
+      <active>true</active>
+      <description>NAV1 Freq Fine -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV1_ID" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_fine_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="562fc571-935d-4084-9c0f-2781c65aaa86">
+      <active>true</active>
+      <description>NAV1 Freq Toggle</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV1_TOG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/nav1_standy_flip" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c58364e5-c3df-46c5-9c04-c83e4503b0d6">
+      <active>true</active>
+      <description>NAV2 Freq Coarse +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV2_OI" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_coarse_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e53ccc22-6c29-48d0-a1f9-8a2cc9e6e2e2">
+      <active>true</active>
+      <description>NAV2 Freq Coarse -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV2_OD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_coarse_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a967ad21-d2ab-4960-85e6-38bc7919be74">
+      <active>true</active>
+      <description>NAV2 Freq Fine +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV2_II" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_fine_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d63e0b71-e821-4eef-ace2-e8312ea4d1f1">
+      <active>true</active>
+      <description>NAV2 Freq Fine -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV2_ID" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_fine_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="91595bee-7751-4c12-95c3-d69d9efaf418">
+      <active>true</active>
+      <description>NAV2 Freq Toggle</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV2_TOG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/nav2_standy_flip" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="960a5baf-0481-41de-9281-e4e628f8afb8">
+      <active>true</active>
+      <description>CRS1 Coarse +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV1^_OI" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/obs1_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="09dcc6b5-522a-47ae-88df-83dc79e83237">
+      <active>true</active>
+      <description>CRS1 Coarse -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV1^_OD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/obs1_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3f9fb8ce-debc-4afa-8b6e-8ca779934d3e">
+      <active>true</active>
+      <description>CRS1 Fine +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV1^_II" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/obs1_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="54ae023f-f515-47b6-9ec3-0baeee443376">
+      <active>true</active>
+      <description>CRS1 Fine -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV1^_ID" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/obs1_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e48c8aba-a87c-46f3-83e2-ab42cfa42111">
+      <active>false</active>
+      <description>CRS1 Reverse (Toggle) (This is cheating :D)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV1^_TOG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="292a93b3-97de-41a4-82ab-e53915b909d3">
+      <active>true</active>
+      <description>CRS2 Coarse +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV2^_OI" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/copilot_obs2_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4908c51b-0dd0-485a-92d0-793caf1782d2">
+      <active>true</active>
+      <description>CRS2 Coarse -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV2^_OD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/copilot_obs2_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3d1e6827-2d03-405d-88fa-35ef48a01f32">
+      <active>true</active>
+      <description>CRS2 Fine +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV2^_II" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/copilot_obs2_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b4add82f-fba1-4618-8bcb-24cbf62bcd20">
+      <active>true</active>
+      <description>CRS2 Fine -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV2^_ID" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/copilot_obs2_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="59ec928f-c87d-4c5d-8c5b-4f9df3e29253">
+      <active>false</active>
+      <description>CRS2 Reverse (Toggle) (This is cheating :D) </description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_NAV2^_TOG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ca1edbc8-49df-4cec-a962-07bfea683693">
+      <active>true</active>
+      <description>FMS1 Coarse +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_OI" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_chapter_up" expression="$" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="FMS1_RNG" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c5ff9895-6b02-4325-bcf5-847b17464955">
+      <active>true</active>
+      <description>FMS1 Coarse -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_OD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_chapter_dn" expression="$" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="FMS1_RNG" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1a225401-9beb-4001-9ebf-2843dc3a84c5">
+      <active>true</active>
+      <description>FMS1 Fine +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_II" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_page_up" expression="$" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="FMS1_RNG" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6f4c1129-020c-478f-85f7-58bcd5e23b75">
+      <active>true</active>
+      <description>FMS1 Fine -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_ID" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_page_dn" expression="$" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="FMS1_RNG" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4ad7f817-16e2-4ec1-8e17-36b405dc39e9">
+      <active>true</active>
+      <description>FMS1 Coarse + RNG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_OI" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_zoom_out" expression="$" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="FMS1_RNG" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e16510db-3e23-4ce1-b035-ca531976fc45">
+      <active>true</active>
+      <description>FMS1 Coarse - RNG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_OD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_zoom_in" expression="$" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="FMS1_RNG" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bbef30b1-2550-4b48-8729-1bf29ada25dd">
+      <active>true</active>
+      <description>FMS1 Fine + RNG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_II" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_zoom_out" expression="$" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="FMS1_RNG" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d30592d3-457d-4b52-9a01-bd8bb07b904f">
+      <active>true</active>
+      <description>FMS1 Fine - RNG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_ID" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_zoom_in" expression="$" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="FMS1_RNG" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bb59cd59-bda3-4e2d-ab6d-1ed7c14eb735">
+      <active>true</active>
+      <description>FMS1 PUSH CRSR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_CRSR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_cursor" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b2380b8e-3f5b-4205-90f0-dc0fe16c1f6f">
+      <active>true</active>
+      <description>FMS1 Direct-To</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_DCT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_direct" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6b491c27-e499-4f19-9874-cf6d784a09f4">
+      <active>true</active>
+      <description>FMS1 MENU</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_MENU" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_menu" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a3a5a882-fc88-4afa-ad7d-f299f8db770c">
+      <active>true</active>
+      <description>FMS1 CLR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_CLR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_clr" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="27be7808-6d70-4e23-9bd6-c5b66a947586">
+      <active>true</active>
+      <description>FMS1 ENT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_ENT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_ent" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fce0d73f-ceb0-48e5-9db3-5c619f96d842">
+      <active>true</active>
+      <description>FMS1 CDI</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_CDI" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_cdi" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f4cb70ab-f8ba-4a54-9f00-54cc01d88988">
+      <active>true</active>
+      <description>FMS1 OBS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_OBS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_obs" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="84f7c578-8f25-431e-8744-bb1bacda6bbd">
+      <active>true</active>
+      <description>FMS1 MSG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_MSG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_msg" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1cc63174-ec75-4832-91aa-d6a81667203a">
+      <active>true</active>
+      <description>FMS1 FPL</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_FPL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_fpl" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ae13af8a-0c1a-4c25-a918-fed212588a24">
+      <active>true</active>
+      <description>FMS1 VNAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_VNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_vnav" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="755a3517-b3e9-4cfb-8c26-16152970929c">
+      <active>true</active>
+      <description>FMS1 PROC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_PROC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_proc" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1244e7fd-4f55-4390-9133-6615638becef">
+      <active>true</active>
+      <description>FMS1 RNG (TOG)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS1_TOG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="FMS1_RNG" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="FMS1_RNG" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2255fad5-ca82-484a-b929-904f8112a75f">
+      <active>true</active>
+      <description>FMS2 Coarse +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_OI" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_chapter_up" expression="$" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="FMS2_RNG" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="22b1f06e-0ddd-4891-b572-89e078b853c0">
+      <active>true</active>
+      <description>FMS2 Coarse -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_OD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_chapter_dn" expression="$" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="FMS2_RNG" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="12e3557b-66a1-49b4-9424-7f85ef2d9624">
+      <active>true</active>
+      <description>FMS2 Fine +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_II" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_page_up" expression="$" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="FMS2_RNG" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3230a797-2fe8-4124-8fe0-c43af1922c5b">
+      <active>true</active>
+      <description>FMS2 Fine -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_ID" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_page_dn" expression="$" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="FMS2_RNG" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a13b5ac6-229b-4d39-b1fd-08b43076fd35">
+      <active>true</active>
+      <description>FMS2 Coarse + RNG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_OI" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_zoom_out" expression="$" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="FMS2_RNG" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fa5d5442-3c55-4f35-95cf-50330008e9cd">
+      <active>true</active>
+      <description>FMS2 Coarse - RNG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_OD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_zoom_in" expression="$" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="FMS2_RNG" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7ff4b8ce-ae5e-4841-9404-60176950195b">
+      <active>true</active>
+      <description>FMS2 Fine + RNG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_II" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_zoom_out" expression="$" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="FMS2_RNG" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="acd0e87d-a0c4-443f-9408-c4925cf15f1f">
+      <active>true</active>
+      <description>FMS2 Fine - RNG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_ID" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_zoom_in" expression="$" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="FMS2_RNG" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fbd5a4e7-b662-4ee4-ab62-542e802ede87">
+      <active>true</active>
+      <description>FMS2 PUSH CRSR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_CRSR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_cursor" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ebac9294-d13f-48d4-8b19-e1ac02c6b11a">
+      <active>true</active>
+      <description>FMS2 Direct-To</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_DCT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_direct" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="406921a9-845e-4b3b-997d-b56ae7a10ccd">
+      <active>true</active>
+      <description>FMS2 MENU</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_MENU" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_menu" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0f08e6a6-43ec-4f82-876c-82ae631a8b06">
+      <active>true</active>
+      <description>FMS2 CLR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_CLR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_clr" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4aea531d-8a47-4a37-8557-28806754e4f1">
+      <active>true</active>
+      <description>FMS2 ENT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_ENT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_ent" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c2d360f8-0dc6-415b-963f-a2a4a5f36012">
+      <active>true</active>
+      <description>FMS2 CDI</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_CDI" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_cdi" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="87b48533-c337-44f6-8e80-cd7564525264">
+      <active>true</active>
+      <description>FMS2 OBS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_OBS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_obs" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e0285d7e-a3d7-4f3b-af2a-d5cf31a9e2b2">
+      <active>true</active>
+      <description>FMS2 MSG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_MSG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_msg" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d6e6bcc1-f064-482b-9c72-358aee686a35">
+      <active>true</active>
+      <description>FMS2 FPL</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_FPL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_fpl" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ac018e13-84e5-43ec-b601-ccba99963394">
+      <active>true</active>
+      <description>FMS2 VNAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_VNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_vnav" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="33fe1647-7296-4871-8f3a-d839cd014636">
+      <active>true</active>
+      <description>FMS2 PROC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_PROC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_proc" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="32563a3f-edb0-4021-ac4d-7688f0401b7f">
+      <active>true</active>
+      <description>FMS2 RNG (TOG)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_FMS2_TOG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="FMS2_RNG" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="FMS2_RNG" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e835f897-cf2f-4be1-ab3a-641991c81f54">
+      <active>true</active>
+      <description>AP Engage/Disengage</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_AP_AP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/servos_toggle" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="41f67d30-af75-4f8e-855b-ebfafed6be8e">
+      <active>true</active>
+      <description>AP HDG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_AP_HDG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="95c9d163-a652-4467-931f-90109baf70b6">
+      <active>true</active>
+      <description>AP NAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_AP_NAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/NAV" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f06f317b-e274-4dec-9606-2ef8e05c6bbf">
+      <active>true</active>
+      <description>AP APR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_AP_APR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/approach" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9ca1ee9e-a602-4cc3-8858-224f6225e07c">
+      <active>true</active>
+      <description>AP ALT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_AP_ALT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/altitude_hold" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8897de1e-6e9e-45cb-a662-1e5544fc9b53">
+      <active>true</active>
+      <description>AP VS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_AP_VS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/vertical_speed_pre_sel" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="da6eab89-0cca-4c90-9f2b-6289d97e2fb9">
+      <active>true</active>
+      <description>AP ALT +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_AP_OI" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/altitude_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2465811a-8149-450e-903f-f982c925e2dc">
+      <active>true</active>
+      <description>AP ALT -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_AP_OD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/altitude_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2ad9fe17-b009-4616-9f19-3d1fc0d3fd75">
+      <active>true</active>
+      <description>AP VS +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_AP_II" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/vertical_speed_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5fd4fb7d-adc7-4846-8321-d3af8b993177">
+      <active>true</active>
+      <description>AP VS -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_AP_ID" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/vertical_speed_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="650d518f-3973-495e-85f0-e47befcf4e3f">
+      <active>true</active>
+      <description>XPDR Coarse +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_XPDR_OI" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_12_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c4f2f342-1b16-4683-9227-d81ac4de438f">
+      <active>true</active>
+      <description>XPDR Coarse -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_XPDR_OD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_12_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3683bbf3-a674-4c5b-9978-02a88e08564f">
+      <active>true</active>
+      <description>XPDR Fine +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_XPDR_II" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_34_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="69605c79-7a46-4e87-a4dc-f0dc176c0120">
+      <active>true</active>
+      <description>XPDR Fine -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_XPDR_ID" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_34_down" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2fc84362-13da-4206-bd00-da676ae5bde8">
+      <active>true</active>
+      <description>XPDR Mode +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_XPDR^_OI" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="165a22a4-7fb3-4b94-a147-4d24405b9cbc">
+      <active>true</active>
+      <description>XPDR Mode +</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_XPDR^_II" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_up" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="822af557-e3b5-41c8-acfb-c1e25c56a10b">
+      <active>true</active>
+      <description>XPDR Mode -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_XPDR^_OD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_dn" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2f8c6278-8d21-4d04-9228-4ba1290780f9">
+      <active>true</active>
+      <description>XPDR Mode -</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.1, Culture=neutral, PublicKeyToken=null" serial="IFR1 / JS-096db160-8ba2-11ed-8002-444553540000" name="Button_XPDR^_ID" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_dn" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

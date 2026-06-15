@@ -25,8 +25,28 @@ Octavi IFR-1 ──HID input report──►  ifrbridge  ──UDP CMND/DREF─�
 
 ```bash
 python3 -m venv .venv
-.venv/bin/pip install -r requirements.txt
+.venv/bin/pip install -e .        # installs ifrbridge + hidapi, and the `ifrbridge` command
 ```
+
+(`pip install -r requirements.txt` still works if you only want the deps without
+installing the package.)
+
+### HID permissions (Linux)
+
+`/dev/hidraw*` is root-only by default, so the panel won't open as a normal user
+— you'll get `OSError: open failed` from `hid.device`. Install the udev rule
+(this is also done automatically by `linux/install.sh`):
+
+```bash
+sudo cp linux/99-octavi-ifr1.rules /etc/udev/rules.d/
+sudo udevadm control --reload-rules && sudo udevadm trigger
+# then unplug and replug the IFR-1
+```
+
+After that, run without `sudo`. Sanity checks: `lsusb | grep -i 04d8` (device
+enumerated?), `ls -l /dev/hidraw*` (the IFR-1 node should now be group-readable,
+not `root … 0600`). If `sudo … run` works but a normal run doesn't, it's purely
+this permission issue.
 
 ## Use
 

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ifrbridge"
+description = "Lightweight MobiFlight replacement: drive an Octavi IFR-1 against X-Plane from a .mcc config."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Dan Stieglitz" }]
+dynamic = ["version"]
+dependencies = ["hidapi>=0.14"]
+
+[project.scripts]
+ifrbridge = "ifrbridge.__main__:main"
+
+[tool.setuptools]
+packages = ["ifrbridge"]
+
+[tool.setuptools.dynamic]
+version = { attr = "ifrbridge.__version__" }

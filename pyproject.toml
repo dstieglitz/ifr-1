@@ -1,11 +1,13 @@
 [build-system]
-requires = ["setuptools>=64"]    # 64+ provides the PEP 660 build_editable hook (pip install -e)
+requires = ["setuptools>=77"]    # 77+ provides PEP 639 SPDX license metadata (and PEP 660 editable installs)
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "ifrbridge"
 description = "Lightweight MobiFlight replacement: drive an Octavi IFR-1 against X-Plane from a .mcc config."
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.10"
 authors = [{ name = "Dan Stieglitz" }]
 dynamic = ["version"]

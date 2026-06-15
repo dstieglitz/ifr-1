@@ -1,0 +1,12 @@
+# Octavi IFR-1 (VID 04d8 / PID e6d6) — allow non-root HID access.
+# Install:
+#   sudo cp 49-octavi-ifr1.rules /etc/udev/rules.d/
+#   sudo udevadm control --reload-rules && sudo udevadm trigger
+#   # then unplug and replug the IFR-1
+#
+# TAG+="uaccess" grants the logged-in desktop user access; the plug dev group
+# MODE/GROUP is a fallback for headless/service users (add yourself with
+#   sudo usermod -aG plugdev $USER   then re-login).
+
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="e6d6", MODE="0660", GROUP="plugdev", TAG+="uaccess"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="e6d6", MODE="0660", GROUP="plugdev", TAG+="uaccess"

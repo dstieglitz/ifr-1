@@ -48,6 +48,24 @@ enumerated?), `ls -l /dev/hidraw*` (the IFR-1 node should now be group-readable,
 not `root … 0600`). If `sudo … run` works but a normal run doesn't, it's purely
 this permission issue.
 
+#### CH Pro Pedals (and other USB controllers)
+
+X-Plane reads rudder pedals/yokes via the **input** subsystem, which is also
+root-restricted on a headless box. A rule for the **CH Pro Pedals** (`068e:00f2`)
+ships in `linux/70-ch-pedals.rules`:
+
+```bash
+sudo cp linux/70-ch-pedals.rules /etc/udev/rules.d/
+sudo udevadm control --reload-rules && sudo udevadm trigger
+# then unplug & replug the pedals
+```
+
+If X-Plane runs headless / as a service (no desktop login → no `uaccess`), also
+add that user to the `input` group: `sudo usermod -aG input "$USER"`, then
+re-login. Verify with `ls -l /dev/input/by-id/ | grep -i CH` (the node should be
+group `input`, mode `0660`). For other CH gear, drop the `idProduct` clause to
+match all of vendor `068e`.
+
 ## Use
 
 ```bash

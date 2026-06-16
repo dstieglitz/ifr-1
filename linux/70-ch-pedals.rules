@@ -1,0 +1,15 @@
+# CH Products Flight Sim Pedals (CH Pro Pedals, USB 068e:00f2) — grant the input
+# group and the logged-in user access, so X-Plane can read them (incl. headless).
+#
+# Install:
+#   sudo cp 70-ch-pedals.rules /etc/udev/rules.d/
+#   sudo udevadm control --reload-rules && sudo udevadm trigger
+#   # then unplug & replug the pedals
+#
+# Headless / service user (no desktop session, so TAG+="uaccess" doesn't apply):
+#   sudo usermod -aG input "$USER"   # then re-login / restart the service
+#
+# Verify: ls -l /dev/input/by-id/ | grep -i CH   (node should be group 'input', 0660)
+
+SUBSYSTEM=="input", ATTRS{idVendor}=="068e", ATTRS{idProduct}=="00f2", MODE="0660", GROUP="input", TAG+="uaccess"
+KERNEL=="hidraw*",  ATTRS{idVendor}=="068e", ATTRS{idProduct}=="00f2", MODE="0660", GROUP="input", TAG+="uaccess"
